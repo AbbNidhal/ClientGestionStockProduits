@@ -1,21 +1,20 @@
 <!-- Sidebar -->
-<nav id="sidebarMenu" class="collapse d-sm-block sidebar collapse bg-white">
+<nav id="sidebarMenu" class="collapse d-sm-block sidebar bg-white">
   <div>
     <div class="list-group list-group-flush mx-3 mt-4">
       <a
-        href="#"
-        class="list-group-item list-group-item-action py-2 ripple active"
-        aria-current="true"
+        routerLink="/dashboard" routerLinkActive="active"
+        class="list-group-item list-group-item-action py-2 ripple"
       >
         <i class="fa fa-home" aria-hidden="true"></i
         ><span> Main dashboard</span>
       </a>
       <a
-        href="#"
+        routerLink="/produit"
         class="list-group-item list-group-item-action py-2 ripple"
       >
         <i class="fa fa-internet-explorer" aria-hidden="true"></i
-        ><span> Webiste traffic</span>
+        ><span> Produits</span>
       </a>
       <a href="#" class="list-group-item list-group-item-action py-2 ripple"
         ><i class="fa fa-key" aria-hidden="true"></i><span> Password</span></a

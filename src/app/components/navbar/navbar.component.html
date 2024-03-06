@@ -1,8 +1,8 @@
-<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
   <div class="container-fluid">
-    <a routerLink="/produit" data-toggle="collapse" (click)="afficherSideBar()"
+    <button data-toggle="collapse" class="bg-primary" (click)="afficherSideBar()"
       ><i class="fa fa-bars" aria-hidden="true"></i
-    ></a>
+    ></button>
     <button
       class="navbar-toggler"
       type="button"
@@ -16,7 +16,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarID">
       <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <a class="nav-link active" aria-current="page" routerLink="">Home</a>
       </div>
     </div>
   </div>

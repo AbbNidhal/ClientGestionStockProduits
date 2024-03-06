@@ -8,7 +8,6 @@ import { Produit } from 'src/app/shared/produit';
   styleUrls: ['./produit.component.css']
 })
 export class ProduitComponent implements OnInit {
-  showHideSideBar : boolean = false;
   produits: Produit[];
   constructor(private produitService: ProduitMockService) { }
 
@@ -16,10 +15,6 @@ export class ProduitComponent implements OnInit {
     this.produits = this.produitService.getProduits();
   }
 
-  onShowSideBarChange(showHideSideBar:any){
-    this.showHideSideBar = showHideSideBar;
-    console.log(showHideSideBar)
-  }
 
 
 }
